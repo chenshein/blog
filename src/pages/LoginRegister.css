@@ -1,0 +1,87 @@
+/* Wrapper for centering login and register forms */
+.login-wrapper,
+.register-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f4f4; /* Light background color for forms */
+}
+
+/* Styles for login and register forms */
+form.login, form.register {
+    max-width: 450px;                /* Set a maximum width for the form */
+    width: 100%;
+    background-color: #fff;          /* White background for the form */
+    padding: 20px;                   /* Add padding inside the form */
+    border-radius: 8px;              /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow around the form */
+    text-align: center;              /* Center align form content */
+}
+
+/* Input fields styling */
+form.login input,
+form.register input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Button styling */
+form.login button,
+form.register button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Button hover effect */
+form.login button:hover,
+form.register button:hover {
+    background-color: #45a049;
+}
+
+/* Register/Login links styling */
+form.login .register,
+form.register .login {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+form.login .register p,
+form.register .login p {
+    margin: 0;
+}
+
+form.login .register p a,
+form.register .login p a{
+    margin: 0;
+    font-weight: bold;
+}
+form.login .register p a:hover,
+form.register .login p a:hover{
+    margin: 0;
+    font-weight: bold;
+    color: #0056b3;
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+    form.login, form.register {
+        padding: 15px;
+    }
+
+    form.login h2, form.register h2 {
+        font-size: 1.3rem;
+    }
+}
